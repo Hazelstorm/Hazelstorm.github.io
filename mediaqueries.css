@@ -5,4 +5,7 @@
     #hamburger-nav {
         display: flex;
     }
+    .section-container {
+        flex-direction: column;
+    }
 }
