@@ -173,7 +173,7 @@ section {
 
 .section-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 150ch;
   justify-content: center;
 }
 
@@ -307,7 +307,7 @@ section {
 
 .about-grids {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), auto));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), auto));
     justify-content: center;
     align-content: center;
 }
