@@ -1,11 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>This page is currently under construction, come back later!</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="assets/profile-pic.png" alt="Profile picture" class="profile-pic">
+        <p class="nav-text">Hi, I'm Hazelstorm</p>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><p class="nav-text">Hi, I'm Hazelstorm</p></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <div class="section-container">
+        <div class="about-section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="About picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <p class="light-text">
+              Toronto-based programmer, designer, and musician with a BSc background in mathematics and computer science
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-container">
+        <p class="section__text__p1">Check Out My Super Cool</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="filter-container">
+              <button class="btn toggle-btn" onclick="projectToggle.call(this, 'programming')">Programming</button>
+              <button class="btn toggle-btn" onclick="projectToggle.call(this, 'design')">Design</button>
+              <button class="btn toggle-btn" onclick="projectToggle.call(this, 'music')">Music</button>
+          </div>
+          <div class="about-grids">
+            <div class="details-container color-container project-container programming design">
+              <div class="project-img-container">
+                <img
+                  src="./assets/projects/speedway.gif"
+                  alt="Project thumbnail"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-description-container">
+                <h3 class="project-date light-text">March 2025</h3>
+                <h2 class="project-title"><a href='https://hazelstorm.itch.io/sisyphus-speedway/'>Sisyphus' Speedway</a></h2>
+                <br>
+                <p>
+                  Godot, 8 day game jam. I worked with a team of two programmers and two artists. The game is a bullet-hell racing roguelike. We placed <b>12th/276</b>!
+                </p>
+                <br>
+                <h3>I Designed:</h3>
+                <ul>
+                  <li>
+                    Obstacles and upgrades.
+                  </li>
+                  <li>
+                    Roguelike upgrade system with a pool that changes over time as upgrades are unlocked.
+                  </li>
+                  <li>
+                    Upgrade screen UI.
+                  </li>
+                </ul>
+                <br>
+                <h3>I Programmed:</h3>
+                <ul>
+                    <li>
+                      Obstacles and upgrades.
+                    </li>
+                    <li>
+                      Upgrade screen and intro screen.
+                    </li>
+                    <li>
+                      Gameplay loop, with a state machine.
+                    </li>
+                    <li>
+                      Bullet spawning system, bullet collision system.
+                    </li>
+                    <li>
+                      Obstacle targeting system that allows previewed obstacles to target the mouse cursor.
+                    </li>
+                    <li>
+                      Shaders for scrolling background and screen-wipe transition.
+                    </li>
+                    <li>
+                      Integrated art files and sprites from artists.
+                    </li>
+                  </ul>
+                  <br>
+                  <p>I also worked with Patashu to compose the game's soundtrack using Jummbox and FamiTracker.</p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="location.href='https://hazelstorm.itch.io/sisyphus-speedway/'"
+                >
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container project-container programming design">
+              <div class="project-img-container">
+                <img
+                  src="./assets/projects/grid-wizard.gif"
+                  alt="Project thumbnail"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-description-container">
+                <h3 class="project-date light-text">August 2024</h3>
+                <h2 class="project-title"><a href='https://hazelstorm.itch.io/grid-wizard/'>Grid Wizard</a></h2>
+                <br>
+                <p>
+                  Godot, 4 day game jam. I worked with UI designers and arists. The game is a deckbuilder roguelike where you have to arrange cards on a grid in order to use them.
+                </p>
+                <br>
+                <h3>I Designed:</h3>
+                <ul>
+                  <li>
+                    Card effects.
+                  </li>
+                  <li>
+                    Enemy designs, movesets, AI.
+                  </li>
+                </ul>
+                <br>
+                <h3>I Programmed:</h3>
+                <ul>
+                  <li>
+                    Block rotation and placement.
+                  </li>
+                  <li>
+                    Card movement (dealing, shuffling, hand position, etc.).
+                  </li>
+                  <li>
+                    Combat game-flow
+                  </li>
+                  <li>
+                    Upgrade screen.
+                  </li>
+                  <li>
+                    Card effects and enemy actions.
+                  </li>
+                  <li>
+                    Status effect system.
+                  </li>
+                  <li>
+                    Integrated art files and sprites from artists.
+                  </li>
+                  </ul>
+                  <br>
+                  <p>I also composed the game's soundtrack using Jummbox.</p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="location.href='https://hazelstorm.itch.io/grid-wizard/'"
+                >
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container project-container music">
+              <div class="project-img-container">
+                <img
+                  src="./assets/projects/asm.jpg"
+                  alt="Project thumbnail"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-description-container">
+                <h3 class="project-date light-text">April 2024</h3>
+                <h2 class="project-title"><a href="https://hazelstorm.bandcamp.com/album/a-solitaire-mystery-ost">A Solitaire Mystery OST</a></h2>
+                <br>
+                <p>
+                  12 track chiptune soundtrack made with Jummbox.
+                </p>
+                <br>
+                <p>
+                  I tried to keep a jazzy feeling throughout the soundtrack while still making each track feel distinct. Most of the tracks are tailored towards the theming of a particular solitaire, but a few are general-purpose tracks for the abstract solitaires that don't have strong theming.
+                </p>
+                <br>
+                <p>
+                  My favourite track: Council Of Secrets
+                </p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="location.href='https://hazelstorm.bandcamp.com/album/a-solitaire-mystery-ost'"
+                >
+                  Listen
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Need to Get in Touch?</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p><a href="mailto:sloanchochinov@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sloan-chochinov">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/discord.png"
+            alt="Discord icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://discordapp.com/users/218388443649146880">Discord</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="nav-copyright">Copyright &#169; 2025 Sloan Chochinov. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

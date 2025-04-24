@@ -7,5 +7,6 @@
     }
     .about-section-container {
         flex-direction: column;
+        gap: 2vh;
     }
 }
