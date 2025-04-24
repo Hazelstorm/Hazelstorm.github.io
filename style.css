@@ -304,8 +304,8 @@ section {
 
 .section__pic-container {
   align-self: center;
-  max-width: 50ch;
-  max-height: 50ch;
+  max-width: 30ch;
+  max-height: 30ch;
   min-width: 1ch;
   min-height: 1ch;
 }
