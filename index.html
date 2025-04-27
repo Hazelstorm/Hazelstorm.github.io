@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Hazelstorm Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -49,7 +49,11 @@
           </div>
           <div class="about-details-container">
             <p class="light-text">
-              Toronto-based programmer, designer, and musician with a BSc background in mathematics and computer science
+              Toronto-based programmer focused on game development
+            </p>
+            <br>
+            <p class="light-text">
+              Currently making games and writing music :)
             </p>
           </div>
         </div>
@@ -60,11 +64,11 @@
         <p class="section__text__p1">Check Out My Super Cool</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
-          <div class="filter-container">
+          <!-- <div class="filter-container">
               <button class="btn toggle-btn" onclick="projectToggle.call(this, 'programming')">Programming</button>
               <button class="btn toggle-btn" onclick="projectToggle.call(this, 'design')">Design</button>
               <button class="btn toggle-btn" onclick="projectToggle.call(this, 'music')">Music</button>
-          </div>
+          </div> -->
           <div class="about-grids">
             <div class="details-container color-container project-container programming design">
               <div class="project-img-container">
@@ -75,25 +79,16 @@
                 />
               </div>
               <div class="project-description-container">
-                <h3 class="project-date light-text">March 2025</h3>
+                <!-- <h3 class="project-date light-text">March 2025</h3> -->
                 <h2 class="project-title"><a href='https://hazelstorm.itch.io/sisyphus-speedway/'>Sisyphus' Speedway</a></h2>
                 <br>
                 <p>
-                  Godot, 8 day game jam. I worked with a team of two programmers and two artists. The game is a bullet-hell racing roguelike. We placed <b>12th/276</b>!
+                  Godot, 8 day game jam. We <b>placed 12th</b> out of 276!
                 </p>
                 <br>
-                <h3>I Designed:</h3>
-                <ul>
-                  <li>
-                    Obstacles and upgrades.
-                  </li>
-                  <li>
-                    Roguelike upgrade system with a pool that changes over time as upgrades are unlocked.
-                  </li>
-                  <li>
-                    Upgrade screen UI.
-                  </li>
-                </ul>
+                <p>
+                  I worked with a team of two programmers and two artists. The game is a bullet-hell racing roguelike.
+                </p>
                 <br>
                 <h3>I Programmed:</h3>
                 <ul>
@@ -119,6 +114,19 @@
                       Integrated art files and sprites from artists.
                     </li>
                   </ul>
+                <br>
+                <h3>I Designed:</h3>
+                <ul>
+                  <li>
+                    Obstacles and upgrades.
+                  </li>
+                  <li>
+                    Roguelike upgrade system with a pool that changes over time as upgrades are unlocked.
+                  </li>
+                  <li>
+                    Upgrade screen UI.
+                  </li>
+                </ul>
                   <br>
                   <p>I also worked with Patashu to compose the game's soundtrack using Jummbox and FamiTracker.</p>
               </div>
@@ -140,22 +148,16 @@
                 />
               </div>
               <div class="project-description-container">
-                <h3 class="project-date light-text">August 2024</h3>
+                <!-- <h3 class="project-date light-text">August 2024</h3> -->
                 <h2 class="project-title"><a href='https://hazelstorm.itch.io/grid-wizard/'>Grid Wizard</a></h2>
                 <br>
                 <p>
-                  Godot, 4 day game jam. I worked with UI designers and arists. The game is a deckbuilder roguelike where you have to arrange cards on a grid in order to use them.
+                  Godot, 4 day game jam.
                 </p>
                 <br>
-                <h3>I Designed:</h3>
-                <ul>
-                  <li>
-                    Card effects.
-                  </li>
-                  <li>
-                    Enemy designs, movesets, AI.
-                  </li>
-                </ul>
+                <p>
+                  I worked with several UI designers and arists. The game is a deckbuilder roguelike where you have to arrange cards on a grid in order to use them.
+                </p>
                 <br>
                 <h3>I Programmed:</h3>
                 <ul>
@@ -166,7 +168,7 @@
                     Card movement (dealing, shuffling, hand position, etc.).
                   </li>
                   <li>
-                    Combat game-flow
+                    Combat gameflow to handle player's turn, enemies' turn, win/loss detection.
                   </li>
                   <li>
                     Upgrade screen.
@@ -178,9 +180,22 @@
                     Status effect system.
                   </li>
                   <li>
+                    Save system for saving and loading in-progress runs.
+                  </li>
+                  <li>
                     Integrated art files and sprites from artists.
                   </li>
                   </ul>
+                <br>
+                <h3>I Designed:</h3>
+                <ul>
+                  <li>
+                    Card effects.
+                  </li>
+                  <li>
+                    Enemy designs, movesets, AI.
+                  </li>
+                </ul>
                   <br>
                   <p>I also composed the game's soundtrack using Jummbox.</p>
               </div>
@@ -188,6 +203,51 @@
                 <button
                   class="btn project-btn"
                   onclick="location.href='https://hazelstorm.itch.io/grid-wizard/'"
+                >
+                  Play
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container project-container programming design">
+              <div class="project-img-container">
+                <img
+                  src="./assets/projects/garden.gif"
+                  alt="Project thumbnail"
+                  class="project-img"
+                />
+              </div>
+              <div class="project-description-container">
+                <!-- <h3 class="project-date light-text">April 2024</h3> -->
+                <h2 class="project-title"><a href="https://hempuli.itch.io/a-solitaire-mystery">Garden Solitaire</a></h2>
+                <br>
+                <p>
+                  LÖVE (Lua). I designed this solitaire to be included in Hempuli's game, A Solitaire Mystery.
+                </p>
+                <br>
+                <h3>I Programmed:</h3>
+                <ul>
+                  <li>
+                    Deck shuffle and card deal.
+                  </li>
+                  <li>
+                    Card stacking (cards can only stack in descending order and alternating colors).
+                  </li>
+                  <li>
+                    Card dragging.
+                  </li>
+                  <li>
+                    Shape detection algorithm.
+                  </li>
+                </ul>
+                <br>
+                <p>
+                  I also designed the solitaire and playtested it to refine the ruleset.
+                </p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn project-btn"
+                  onclick="location.href='https://hempuli.itch.io/a-solitaire-mystery'"
                 >
                   Play
                 </button>
@@ -202,7 +262,7 @@
                 />
               </div>
               <div class="project-description-container">
-                <h3 class="project-date light-text">April 2024</h3>
+                <!-- <h3 class="project-date light-text">April 2024</h3> -->
                 <h2 class="project-title"><a href="https://hazelstorm.bandcamp.com/album/a-solitaire-mystery-ost">A Solitaire Mystery OST</a></h2>
                 <br>
                 <p>
